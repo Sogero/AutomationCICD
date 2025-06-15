@@ -1,0 +1,19 @@
+[
+{
+	"email" : "automationtest1@ggmail.com",
+	"password": "AutomationTest@24",
+	"productName": "Zara Coat 3",
+	"country": "india",
+	"initialCountry": "ind"
+},
+{
+	"email" : "testname@mail.com",
+	"password": "AutomationTest@24",
+	"productName": "ADIDAS ORIGINAL",
+	"country": "germany",
+	"initialCountry": "germ"
+}
+	
+
+	
+]

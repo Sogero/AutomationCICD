@@ -1,0 +1,8 @@
+[
+	{
+		"invalidEmail": "wrong@ggmail.com",
+		"invalidPass": "wrongpass",
+		"errorMessage": "Incorrect email or password."
+	}
+	
+]
