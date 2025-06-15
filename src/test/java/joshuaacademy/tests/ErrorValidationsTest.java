@@ -41,7 +41,7 @@ public class ErrorValidationsTest extends BaseTest {
 	
 	@DataProvider
 	public Object[][] getData() throws IOException {
-		List<HashMap<String, String>> data = getJasonDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\joshuaacadamy\\data\\ErrorLoginValidation.json");
+		List<HashMap<String, String>> data = getJasonDataToMap(System.getProperty("user.dir")+"\\src\\test\\java\\joshuaacademy\\data\\ErrorLoginValidation.json");
 		return new Object[][] { {data.get(0)} };
 		
 	}
