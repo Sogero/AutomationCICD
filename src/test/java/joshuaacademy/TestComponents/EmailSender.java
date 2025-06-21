@@ -46,7 +46,7 @@ public class EmailSender {
             // HTML Email body with clickable link
             String htmlContent = "<h2>Test Automation Report</h2>" +
                     "<p>View the latest test report here:</p>" +
-                    "<a href=\"" + "https://3dad-136-158-8-121.ngrok-free.app/job/SeleniumAutomationTest/ws/test-output/index.html" + "\">Open Report in Browser</a>";
+                    "<a href=\"" + "https://Sogero.github.io/AutomationCICD/index.html" + "\">Open Report in Browser</a>";
 
             msg.setContent(htmlContent, "text/html");
             Transport.send(msg);
