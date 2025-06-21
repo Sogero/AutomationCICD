@@ -10,7 +10,7 @@ public class ExtentReporterNG {
 	
 	public static ExtentReports getReportObject() {
 
-	    String path = System.getProperty("user.dir") + "//Reports//index.html";
+	    String path = System.getProperty("user.dir") + "//test-output//index.html";
 	    ExtentSparkReporter reporter = new ExtentSparkReporter(path);
 	    reporter.config().setEncoding("utf-8");
 	    reporter.config().setTheme(Theme.STANDARD);

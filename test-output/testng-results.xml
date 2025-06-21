@@ -2,20 +2,20 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-06-21T22:43:21 PST" name="Default suite" finished-at="2025-06-21T22:43:50 PST" duration-ms="28787">
+  <suite started-at="2025-06-21T23:02:04 PST" name="Default suite" finished-at="2025-06-21T23:02:26 PST" duration-ms="21164">
     <groups>
       <group name="Purchase">
         <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" name="submitOrder" class="joshuaacademy.tests.SubmitOrderTest"/>
         <method signature="SubmitOrderTest.OrderHistoryTest(java.util.HashMap)[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" name="OrderHistoryTest" class="joshuaacademy.tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2025-06-21T22:43:21 PST" name="Default test" finished-at="2025-06-21T22:43:50 PST" duration-ms="28787">
+    <test started-at="2025-06-21T23:02:04 PST" name="Default test" finished-at="2025-06-21T23:02:26 PST" duration-ms="21164">
       <class name="joshuaacademy.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T22:43:21 PST" name="launchApplication" finished-at="2025-06-21T22:43:35 PST" duration-ms="14118" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T23:02:05 PST" name="launchApplication" finished-at="2025-06-21T23:02:11 PST" duration-ms="6789" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T22:43:35 PST" name="submitOrder" data-provider="getData" finished-at="2025-06-21T22:43:40 PST" duration-ms="4511" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T23:02:11 PST" name="submitOrder" data-provider="getData" finished-at="2025-06-21T23:02:16 PST" duration-ms="4532" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -26,15 +26,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T22:43:40 PST" name="tearDown" finished-at="2025-06-21T22:43:40 PST" duration-ms="245" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T23:02:16 PST" name="tearDown" finished-at="2025-06-21T23:02:16 PST" duration-ms="263" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T22:43:40 PST" name="launchApplication" finished-at="2025-06-21T22:43:48 PST" duration-ms="8227" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T23:02:16 PST" name="launchApplication" finished-at="2025-06-21T23:02:24 PST" duration-ms="7876" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest(java.util.HashMap)[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T22:43:48 PST" name="OrderHistoryTest" data-provider="getData" finished-at="2025-06-21T22:43:49 PST" depends-on-methods="joshuaacademy.tests.SubmitOrderTest.submitOrder" duration-ms="1295" status="PASS">
+        <test-method signature="OrderHistoryTest(java.util.HashMap)[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T23:02:24 PST" name="OrderHistoryTest" data-provider="getData" finished-at="2025-06-21T23:02:25 PST" depends-on-methods="joshuaacademy.tests.SubmitOrderTest.submitOrder" duration-ms="1287" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -45,11 +45,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T22:43:49 PST" name="tearDown" finished-at="2025-06-21T22:43:50 PST" duration-ms="210" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T23:02:25 PST" name="tearDown" finished-at="2025-06-21T23:02:26 PST" duration-ms="239" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="afterSuite()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T22:43:50 PST" name="afterSuite" finished-at="2025-06-21T22:43:53 PST" duration-ms="3618" status="PASS">
+        <test-method is-config="true" signature="afterSuite()[pri:0, instance:joshuaacademy.tests.SubmitOrderTest@6c40365c]" started-at="2025-06-21T23:02:26 PST" name="afterSuite" finished-at="2025-06-21T23:02:29 PST" duration-ms="3663" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterSuite -->
