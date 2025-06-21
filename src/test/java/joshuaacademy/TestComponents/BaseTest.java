@@ -17,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.edge.EdgeDriver;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 
 import com.fasterxml.jackson.core.type.TypeReference;
@@ -29,6 +30,7 @@ public class BaseTest {
 
 	public WebDriver driver;
 	public LandingPage landingPage;
+	
 
 	public WebDriver initializeDriver() throws IOException {
 
@@ -95,5 +97,10 @@ public class BaseTest {
 	public void tearDown() {
 		driver.quit();
 	}
+
+	@AfterSuite(alwaysRun = true)
+	public void afterSuite() {
+		System.out.println("Preparing to send ExtentReport via email...");
+		EmailSender.sendTestReport();	}
 
 }
