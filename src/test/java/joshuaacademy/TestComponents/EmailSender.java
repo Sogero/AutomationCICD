@@ -57,37 +57,6 @@ public class EmailSender {
             e.printStackTrace();
         }
 
-//		try {
-//			 Message message = new MimeMessage(session);
-//		        message.setFrom(new InternetAddress(fromEmail));
-//		        message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(toEmail));
-//		        message.setSubject("Extent Test Report");
-//
-//		        // Text message
-//		        MimeBodyPart textPart = new MimeBodyPart();
-//		        textPart.setText("Hi team,\\n\\nClick the link below to view the Test Report in your browser \\n\\nhttps://Sogero.github.io/AutomationCICD/Reports/index.html");
-//
-//		        // ✅ HTML report attachment
-//		        MimeBodyPart attachmentPart = new MimeBodyPart();
-//		        String reportPath = System.getProperty("user.dir")+"\\Reports\\index.html";
-//		        FileDataSource source = new FileDataSource(reportPath);
-//		        attachmentPart.setDataHandler(new DataHandler(source));
-//		        attachmentPart.setHeader("Content-Type", "text/html; charset=UTF-8");
-//		        attachmentPart.setFileName("ExtentReport.html");
-//
-//		        // Combine parts
-//		        MimeMultipart multipart = new MimeMultipart();
-//		        multipart.addBodyPart(textPart);
-//		        multipart.addBodyPart(attachmentPart);
-//
-//		        message.setContent(multipart);
-//		        Transport.send(message);
-//
-//		        System.out.println("✅ Email with ExtentReport sent successfully!");
-//
-//		} catch (MessagingException e) {
-//			e.printStackTrace();
-//		}
 
 	}
 
