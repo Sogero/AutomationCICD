@@ -1,0 +1,50 @@
+name: Run Tests and Send Email
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+
+      - name: Run Tests
+        run: |
+          ./mvnw test
+
+      - name: Generate Report
+        run: |
+          ./mvnw surefire-report:report-only
+          mkdir -p docs
+          cp -r target/site/* docs/
+
+      - name: Commit and Push Report to GitHub Pages
+        run: |
+          git config user.name "github-actions"
+          git config user.email "github-actions@github.com"
+          git add docs/
+          git commit -m "Update test report"
+          git push origin HEAD
+
+      - name: Send Email
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          username: ${{ secrets.EMAIL_USERNAME }}
+          password: ${{ secrets.EMAIL_PASSWORD }}
+          subject: GitHub Test Report
+          body: |
+            The test run has completed. You can view the results here:
+            https://your-username.github.io/your-repo/
+          to: team@example.com
+          from: GitHub CI
