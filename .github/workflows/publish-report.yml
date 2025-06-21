@@ -1,0 +1,29 @@
+name: Publish Extent Report to GitHub Pages
+
+on:
+  push:
+    branches:
+      - main  # or whatever your default branch is
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Set up Java
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'temurin'
+          java-version: '17'
+
+      - name: Build and run tests
+        run: mvn test
+
+      - name: Deploy report to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./reports
